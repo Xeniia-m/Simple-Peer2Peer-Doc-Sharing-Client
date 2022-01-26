@@ -8,7 +8,7 @@ The client
 The client should first connect to the clients, according to the following scheme:
 
     • The client connects via socket to clients with greater id.
-    • The client generates an http server (as shown in class, here at page 88) in order to accept 
+    • The client generates a server in order to accept 
     connections from clients with lower id (if exists).
     • Each of these sockets should be defined with a callback function for handling received data.
       The callback for this application should:
