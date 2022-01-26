@@ -1,6 +1,7 @@
 # Simple-Peer2Peer-Doc-Sharing-Client
 
 The client
+
   The client program is initialized with a unique id, a port number, a replica of the shared string (same 
   for all clients), and a list of the clients in the system (defined by their id, host and port), and a list of 
   string operations.
@@ -23,7 +24,7 @@ The client
           message to all clients.
           • When ‘goodbye’ messages are received from all other clients, the client prints its replica and 
           exit.
-          
+
 The merge algorithm
 
     • After applying an update (including the client’s own operations), the client should store the 
@@ -37,15 +38,15 @@ The merge algorithm
 
 
 Input
-    The input file of each client is composed of:
-    <client id>
-    <client port>
-    <initial string (same for all clients)>
-    \n
-    <other client id> <other client host> <other client port>
-    …
-    \n
-    <updated-operation>
-    …
+    • The input file of each client is composed of:
+    • <client id>
+    • <client port>
+    •  <initial string (same for all clients)>
+    • \n
+    •  <other client id> <other client host> <other client port>
+    • …
+    •  \n
+    •  <updated-operation>
+    •  …
 Where <updated-operation> is defined by type (‘insert’ or ‘delete’) and index (‘insert’ without index 
 denote character adding)
