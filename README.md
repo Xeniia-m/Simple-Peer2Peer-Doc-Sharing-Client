@@ -39,6 +39,7 @@ The merge algorithm
 
 
 Input
+
     • The input file of each client is composed of:
     • <client id>
     • <client port>
