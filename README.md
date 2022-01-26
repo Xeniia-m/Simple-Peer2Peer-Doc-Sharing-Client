@@ -5,7 +5,8 @@ The client
   The client program is initialized with a unique id, a port number, a replica of the shared string (same 
   for all clients), and a list of the clients in the system (defined by their id, host and port), and a list of 
   string operations.
-  The client should first connect to the clients, according to the following scheme:
+The client should first connect to the clients, according to the following scheme:
+
     • The client connects via socket to clients with greater id.
     • The client generates an http server (as shown in class, here at page 88) in order to accept 
     connections from clients with lower id (if exists).
